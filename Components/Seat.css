@@ -1,0 +1,165 @@
+/* SeatBookingPage.css */
+.seat-booking-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.selected-seats-container {
+  margin-top: 20px;
+}
+
+.selected-seats-container h2 {
+  margin-bottom: 5px;
+}
+
+.selected-seats-container p {
+  margin: 0;
+}
+
+.seat-types-container {
+  overflow-x: auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.seat-types-container h2 {
+  margin-bottom: 5px;
+}
+
+.seat-types {
+  display: flex;
+}
+
+.seat-type {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.seat-type-color {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+}
+
+.seat-type span {
+  font-size: 12px;
+}
+
+.seat-type.available .seat-type-color {
+  background-color: #e5e5e5;
+  border-color: #008000;
+}
+
+.seat-type.available-women .seat-type-color {
+  background-color: #e5e5e5;
+  border-color: #ff69b4;
+}
+
+.seat-type.selected-by-you .seat-type-color {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+
+.seat-type.booked .seat-type-color {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.seat-type.booked-women .seat-type-color {
+  background-color: #e5e5e5;
+  border-color: #ff69b4;
+}
+
+.seat-grid-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.seat-grid {
+  display: flex;
+}
+
+.deck-container {
+  margin-right: 20px;
+}
+
+.lower-deck,
+.upper-deck {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seat.available {
+  background-color: #e5e5e5;
+}
+
+.seat.available-women {
+  background-color: #e5e5e5;
+}
+
+.seat.selected {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.seat.booked {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
+}
+
+.seat.booked-women {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
+}
+
+.price {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.newContainer{
+  display: block;
+  /* justify-content: center; */
+ 
+}
+
